@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animated Dice</title>
+    <style>
+        body{
+            font-family:Arial;
+            text-align:center;
+            margin-top:50px;
+        }
+        #dice{
+            font-size:100px;
+            transition:transform 0.2s;
+        }
+        button{
+            font-size:20px;
+            padding:10px 20px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Roll the Dice</h2>
+    <div id="dice">Dice</div>
+    <button onclick="rolldice()"> Roll </button>
+    <script type="text/javascript">
+        const dicefaces=["dice_1.png","dice_2.png","dice_3.png","dice_4.png","dice_5.png","dice_6.png"];
+        function rolldice(){
+            let dice=document.getElementById("dice");
+            let count=10;
+            let interval=setInterval(() => {
+                let face=dicefaces[Math.floor(Math.random()*6)];
+                dice.innerHTML=`<img src="${face}">`;
+                dice.style.transform='rotates(${Math.random()*360}deg)';
+                count--;
+                if(count==0)clearInterval(interval);
+            }, 100);
+        }
+    </script>
+</body>
+</html>
