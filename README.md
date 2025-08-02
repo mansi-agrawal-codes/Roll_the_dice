@@ -6,3 +6,6 @@ Technologies used
 1. HTML
 2. CSS
 3. Javascript
+
+##Live RollDice
+[Click here to view](https://mansi-agrawal-codes.github.io/Roll_the_dice/)
