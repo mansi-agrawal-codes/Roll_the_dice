@@ -6,3 +6,5 @@ Technologies used
 1. HTML
 2. CSS
 3. Javascript
+## Live Demo
+[Click here](https://mansi-rolldice.netlify.app/)
